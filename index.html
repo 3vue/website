@@ -12,36 +12,32 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="scripts/carousel.js"></script>
+
     <title>3VUE - Free Streaming Website</title>
   </head>
 
   <body>
+    <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-
       <a class="navbar-brand" href="#">
         <img src="/assets/icons/logo.svg" width="100" height="30" alt="Website's logo">
       </a>
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
         <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
-
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
-
           <li class="nav-item">
             <a class="btn mx-2 my-sm-1" href="#">
               <img src="/assets/icons/user.svg" width="30" height="30" alt="User settings">
             </a>
             <!-- <button class="btn btn-outline-primary my-2 my-sm-0" href="#">Sign Up</button>-->
           </li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle mx-0 mt-sm-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="/assets/icons/settings.svg" width="30" height="30" alt="Settings">
@@ -56,17 +52,51 @@
         </ul>
       </div>
     </nav>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur lacus vel sem rutrum, vel vehicula elit faucibus. In condimentum at leo malesuada finibus. Vivamus non iaculis velit, non scelerisque nulla. Pellentesque pretium lorem eget bibendum laoreet. Vivamus cursus bibendum diam, id aliquet nisi blandit in. Proin at scelerisque sem. Aliquam consequat nec metus nec lobortis. Suspendisse sed metus eget ex dapibus imperdiet in efficitur velit. Proin sodales, tortor a eleifend sodales, orci dolor sollicitudin ex, ac vehicula augue purus ac risus. Proin et efficitur risus. Proin commodo sagittis vulputate. Duis ornare turpis laoreet, tincidunt lectus sed, ullamcorper erat. Maecenas vel ornare lectus, sit amet pulvinar turpis.
+<!-- MEDIA CONTENT -->
 
-Integer feugiat feugiat felis. Aliquam et libero quis est blandit ultricies. Ut lacinia et nulla quis laoreet. Sed finibus justo non sem condimentum pretium. Quisque mattis ac sem in commodo. Mauris vehicula dictum diam. Vivamus dapibus quam ac malesuada volutpat. Aenean quis neque scelerisque, vulputate ligula in, congue lectus.
+    <!--  CAROUSEL -->
+      <div class='infinite-carousel'>
+        <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
+          <img src="/assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
+        </a>
+            <div class="viewport">
+                <div class='list'>
+                    <div class='item g'>
+                        1
+                    </div>
+                    <div class='item r'>
+                        2
+                    </div>
+                    <div class='item g'>
+                        3
+                    </div>
+                    <div class='item b'>
+                        4
+                    </div>
+                    <div class='item r'>
+                        5
+                    </div>
+                    <div class='item g'>
+                        6
+                    </div>
+                    <div class='item b'>
+                        7
+                    </div>
+                </div>
+            </div>
+          <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
+            <img src="/assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
+          </a>
+        </div>
 
-Aliquam eleifend vitae magna non eleifend. Vestibulum vestibulum metus rutrum felis maximus, non iaculis urna tristique. Sed sagittis est ut suscipit luctus. Aenean gravida tortor iaculis augue malesuada, vel porttitor tortor rutrum. Ut et mauris lorem. Duis blandit mi sed odio porta vulputate. Nullam molestie nibh diam, eu varius quam dignissim id. Morbi et lorem vitae velit imperdiet ultrices nec ut velit. Aliquam scelerisque pellentesque nisi, in facilisis nulla fringilla sit amet.
+      <script src='./scripts/carousel.js'></script>
+       <script>
+           $('.infinite-carousel').infiniteCarousel({
+               itemsPerMove : 1,
+               duration : 250
+           });
+       </script>
 
-Aliquam sagittis pharetra tempor. Nulla feugiat odio erat, quis fringilla nisi luctus ut. Mauris sed lorem sagittis, iaculis erat sed, tristique ante. Cras eget aliquam lorem. Phasellus non tincidunt risus. Ut vulputate bibendum massa vitae suscipit. Nunc eleifend non dolor condimentum vehicula.
-
-Vestibulum tempus velit quis tellus consectetur volutpat. Integer sollicitudin, dolor et imperdiet sodales, metus velit malesuada ante, a condimentum nunc nunc sit amet justo. Pellentesque sed nibh mollis, egestas ante at, volutpat quam. Aliquam quis purus suscipit, ullamcorper urna vitae, pretium augue. In fringilla ligula id urna ornare, et sollicitudin mi molestie. Aliquam augue nisi, efficitur non metus euismod, posuere tempor odio. Pellentesque hendrerit lorem et justo condimentum, eu porta sem imperdiet. Cras accumsan molestie metus, eget porttitor mauris gravida vitae.
-    </p>
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Settings">Settings</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
   </body>
 

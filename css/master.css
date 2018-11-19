@@ -1,0 +1,49 @@
+.infinite-carousel .list{
+    width:1400px;
+    height:200px;
+    overflow:visible;
+}
+.infinite-carousel .viewport{
+  width:76.5%;
+  height:200px;
+  margin: auto;
+  margin-top: 2%;
+  overflow:hidden;
+}
+
+.infinite-carousel {
+  position: relative;
+}
+
+.item{
+    width:200px;
+    height:200px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    margin-right:10px;
+    float: left;
+    /*display: inline-block;*/
+}
+.r{
+    background-color: red;
+}
+.g{
+    background-color: #cf5;
+}
+.b{
+    background-color: blue;
+}
+
+
+.carousel-go_left {
+position: absolute;
+top: 35%;
+left: 2.5%;
+}
+
+.carousel-go_right {
+  position: absolute;
+  top: 35%;
+  left: 92.5%;
+}
