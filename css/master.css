@@ -1,3 +1,11 @@
+/* ---- Font ---- */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+/* ---- Carousels ---- */
 .list {
   width:2000px;
   height:200px;
@@ -50,4 +58,24 @@ div[class^='infinite-carousel']  {
   position: absolute;
   top: 35%;
   left: 92.5%;
+}
+
+/* ---- Sidebar ---- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
 }
