@@ -24,6 +24,7 @@ div[class^='infinite-carousel']  {
     line-height: 200px;
     margin-right:10px;
     float: left;
+    cursor: pointer;
     /*display: inline-block;*/
 }
 .r{
