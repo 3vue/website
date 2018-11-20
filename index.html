@@ -52,6 +52,7 @@
         </ul>
       </div>
     </nav>
+
 <!-- MEDIA CONTENT -->
 
     <!--  CAROUSEL -->
@@ -89,9 +90,49 @@
           </a>
         </div>
 
+        <!--  CAROUSEL -->
+          <div class='infinite-carousel-2'>
+            <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
+              <img src="/assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
+            </a>
+                <div class="viewport">
+                    <div class='list'>
+                        <div class='item g'>
+                            1
+                        </div>
+                        <div class='item r'>
+                            2
+                        </div>
+                        <div class='item g'>
+                            3
+                        </div>
+                        <div class='item b'>
+                            4
+                        </div>
+                        <div class='item r'>
+                            5
+                        </div>
+                        <div class='item g'>
+                            6
+                        </div>
+                        <div class='item b'>
+                            7
+                        </div>
+                    </div>
+                </div>
+              <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
+                <img src="/assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
+              </a>
+            </div>
+
       <script src='./scripts/carousel.js'></script>
        <script>
            $('.infinite-carousel').infiniteCarousel({
+               itemsPerMove : 1,
+               duration : 250
+           });
+
+           $('.infinite-carousel-2').infiniteCarousel({
                itemsPerMove : 1,
                duration : 250
            });
