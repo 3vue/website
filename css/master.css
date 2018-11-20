@@ -1,9 +1,10 @@
-.infinite-carousel .list{
+.list{
     width:2000px;
     height:200px;
     overflow:visible;
 }
-.infinite-carousel .viewport{
+
+ .viewport{
   width:76.5%;
   height:200px;
   margin: auto;
@@ -11,7 +12,7 @@
   overflow:hidden;
 }
 
-.infinite-carousel {
+div[class^='infinite-carousel']  {
   position: relative;
 }
 
