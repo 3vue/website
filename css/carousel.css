@@ -75,8 +75,17 @@ div[class^='infinite-carousel']  {
   display: none;
 }
 
+.media-content a {
+  float: right;
+}
+
 .hovered {
   display: inherit;
   position: relative;
+  top: 72%;
+  padding: 5%;
+  text-align: left;
   overflow-wrap: break-word;
+  background: rgba(225, 225, 225, 0.5);
+  color: BLACK;
 }
