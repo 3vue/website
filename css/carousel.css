@@ -52,3 +52,11 @@ div[class^='infinite-carousel']  {
   top: 35%;
   left: 92.5%;
 }
+
+.media-content {
+  display: none;
+}
+
+.hovered {
+  display: inherit;
+}
