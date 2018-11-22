@@ -143,6 +143,30 @@
         <div class="viewport">
           <div class='list'>
             <div class='item g'>
+              <div class="media-content"> Title
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </div>
+            </div>
+            <div class='item r'>
+              <span class="media-content"> Title
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
+            </div>
+            <div class='item g'>
+              <span class="media-content"> Title
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
+            </div>
+            <div class='item b'>
               <span class="media-content"> Title
                 <!-- <div class="media-description">Description of the movie</div> -->
                 <a href="#">
@@ -151,22 +175,28 @@
               </span>
             </div>
             <div class='item r'>
-              2
+              <span class="media-content"> Title
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
             <div class='item g'>
-              3
+              <span class="media-content"> Title
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
             <div class='item b'>
-              4
-            </div>
-            <div class='item r'>
-              5
-            </div>
-            <div class='item g'>
-              6
-            </div>
-            <div class='item b'>
-              7
+              <span class="media-content"> Title
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -255,13 +285,13 @@
 
 
   /* Carousel related actions - @Author: Alberto*/
-  $('.item').on('mouseover', () => {
-    $('.media-content').toggleClass('hovered')
-  })
-  
-  $('.item').on('mouseout', () => {
-    $('.media-content').toggleClass('hovered')
-  })
+  $('.item').mouseover(e => {
+    $(e.target).find('.media-content').toggleClass('hovered')
+    })
+
+    $('.media-content').mouseout(e => {
+      $(e.target).toggleClass('hovered')
+    })
   </script>
 </body>
 
