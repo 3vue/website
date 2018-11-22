@@ -13,6 +13,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./css/carousel.css">
+  <link rel="stylesheet" href="./css/carousel_2.css">
   <link rel="stylesheet" href="./css/master.css">
 
   <!-- jQuery -->
@@ -90,6 +91,7 @@
     <!-- Page Content  -->
     <div id="content">
 
+      <!--  NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
 
@@ -133,118 +135,114 @@
       </nav>
 
       <!--  CAROUSEL -->
-      <div class='infinite-carousel'>
-        <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
-          <img src="./assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
-        </a>
-        <div class="viewport">
-          <div class='list'>
-            <div class='item g'>
-              1
+      <div class="carousel">
+        <div class="carousel-row">
+          <div class="carousel-tile">
+            &nbsp;
+            <div class="media-desc">
+              <span class="media-title">Title</span>Genre: Test</div>
+              <div class="media-controls">
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </div>
             </div>
-            <div class='item r'>
-              2
-            </div>
-            <div class='item g'>
-              3
-            </div>
-            <div class='item b'>
-              4
-            </div>
-            <div class='item r'>
-              5
-            </div>
-            <div class='item g'>
-              6
-            </div>
-            <div class='item b'>
-              7
-            </div>
-          </div>
-        </div>
-        <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
-          <img src="./assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
-        </a>
-      </div>
-
-      <!--  CAROUSEL -->
-      <div class='infinite-carousel-2'>
-        <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
-          <img src="./assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
-        </a>
-        <div class="viewport">
-          <div class='list'>
-            <div class='item g'>
-              1
-            </div>
-            <div class='item r'>
-              2
-            </div>
-            <div class='item g'>
-              3
-            </div>
-            <div class='item b'>
-              4
-            </div>
-            <div class='item r'>
-              5
-            </div>
-            <div class='item g'>
-              6
-            </div>
-            <div class='item b'>
-              7
-            </div>
-          </div>
-        </div>
-        <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
-          <img src="./assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="overlay"></div>
 
 
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <!-- jQuery Custom Scroller CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-  <!-- Carousel Script -->
-  <script src='./scripts/carousel.js'></script>
+            <div class="carousel-tile">
+              &nbsp;
+              <div class="media-desc">
+                <span class="media-title">Title</span>Genre: Test</div>
+                <div class="media-controls">
+                  <a href="#">
+                    <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-tile">
+                &nbsp;
+                <div class="media-desc">
+                  <span class="media-title">Title</span>Genre: Test</div>
+                  <div class="media-controls">
+                    <a href="#">
+                      <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-tile">
+                  &nbsp;
+                  <div class="media-desc">
+                    <span class="media-title">Title</span>Genre: Test</div>
+                    <div class="media-controls">
+                      <a href="#">
+                        <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                      </a>
+                    </div>
+                  </div>
 
 
-  <script type="text/javascript">
-    $('.infinite-carousel').infiniteCarousel({
-      itemsPerMove : 1,
-      duration : 250
-    });
+                    <!--  CAROUSEL -->
+                    <div class="carousel">
+                      <div class="carousel-row">
+                        <div class="carousel-tile">Tile 1</div>
+                        <div class="carousel-tile">Tile 2</div>
+                        <div class="carousel-tile">Tile 3</div>
+                        <div class="carousel-tile">Tile 4</div>
+                        <div class="carousel-tile">Tile 5</div>
+                        <div class="carousel-tile">Tile 1</div>
+                        <div class="carousel-tile">Tile 2</div>
+                        <div class="carousel-tile">Tile 3</div>
+                        <div class="carousel-tile">Tile 4</div>
+                        <div class="carousel-tile">Tile 5</div>
+                      </div>
+                    </div>
 
-    $('.infinite-carousel-2').infiniteCarousel({
-      itemsPerMove : 1,
-      duration : 250
-    });
+                  </div>
+                </div>
 
-    $(document).ready(function () {
-      $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-      });
+                <div class="overlay"></div>
 
-      $('#dismiss, .overlay').on('click', function () {
-        $('#sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
-        console.log('porcodiobastardo')
-      });
 
-      $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').addClass('active');
-        $('.overlay').addClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-    });
-  </script>
-</body>
+                <!-- Bootstrap JS -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                <!-- jQuery Custom Scroller CDN -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+                <!-- Carousel Script -->
+                <script src='./scripts/carousel.js'></script>
 
-</html>
+
+                <script type="text/javascript">
+                $('.infinite-carousel').infiniteCarousel({
+                  itemsPerMove : 1,
+                  duration : 250
+                });
+
+                $('.infinite-carousel-2').infiniteCarousel({
+                  itemsPerMove : 1,
+                  duration : 250
+                });
+
+                $(document).ready(function () {
+                  $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                  });
+
+                  $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                    console.log('porcodiobastardo')
+                  });
+
+                  $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                  });
+                });
+                </script>
+              </body>
+
+              </html>
