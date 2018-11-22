@@ -142,56 +142,46 @@
         </a>
         <div class="viewport">
           <div class='list'>
-            <div class='item g'>
-              <div class="media-content"> Title
-                <!-- <div class="media-description">Description of the movie</div> -->
+            <div class='item movie_1'>
+              <span class="media-content">Sherlock Homeless
                 <a href="#">
                   <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
                 </a>
-              </div>
+              </span>
             </div>
-            <div class='item r'>
-              <span class="media-content"> Title
+            <div class='item movie_2'>
+              <span class="media-content">Not Fast, just Furious
                 <!-- <div class="media-description">Description of the movie</div> -->
                 <a href="#">
                   <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
                 </a>
               </span>
             </div>
-            <div class='item g'>
-              <span class="media-content"> Title
+            <div class='item movie_3'>
+              <span class="media-content">Trainsleeping
                 <!-- <div class="media-description">Description of the movie</div> -->
                 <a href="#">
                   <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
                 </a>
               </span>
             </div>
-            <div class='item b'>
-              <span class="media-content"> Title
+            <div class='item movie_4'>
+              <span class="media-content">Spiderman 6
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
+            </div>
+            <div class='item movie_5'>
+              <span class="media-content">I am Dog
                 <!-- <div class="media-description">Description of the movie</div> -->
                 <a href="#">
                   <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
                 </a>
               </span>
             </div>
-            <div class='item r'>
-              <span class="media-content"> Title
-                <!-- <div class="media-description">Description of the movie</div> -->
-                <a href="#">
-                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
-                </a>
-              </span>
-            </div>
-            <div class='item g'>
-              <span class="media-content"> Title
-                <!-- <div class="media-description">Description of the movie</div> -->
-                <a href="#">
-                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
-                </a>
-              </span>
-            </div>
-            <div class='item b'>
-              <span class="media-content"> Title
+            <div class='item movie_6'>
+              <span class="media-content">Ice Cream
                 <!-- <div class="media-description">Description of the movie</div> -->
                 <a href="#">
                   <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
@@ -212,33 +202,57 @@
         </a>
         <div class="viewport">
           <div class='list'>
-            <div class='item g'>
-              1
+            <div class='item movie_1'>
+              <span class="media-content">Sherlock Homeless
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
-            <div class='item r'>
-              2
+            <div class='item movie_2'>
+              <span class="media-content">Not Fast, just Furious
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
-            <div class='item g'>
-              3
+            <div class='item movie_3'>
+              <span class="media-content">Trainsleeping
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
-            <div class='item b'>
-              4
+            <div class='item movie_4'>
+              <span class="media-content">Spiderman 6
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
-            <div class='item r'>
-              5
+            <div class='item movie_5'>
+              <span class="media-content">I am Dog
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
-            <div class='item g'>
-              6
-            </div>
-            <div class='item b'>
-              7
+            <div class='item movie_6'>
+              <span class="media-content">Ice Cream
+                <!-- <div class="media-description">Description of the movie</div> -->
+                <a href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+              </span>
             </div>
           </div>
         </div>
         <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
           <img src="./assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
         </a>
-      </div>
     </div>
   </div>
 
@@ -272,7 +286,6 @@
     $('#dismiss, .overlay').on('click', function () {
       $('#sidebar').removeClass('active');
       $('.overlay').removeClass('active');
-      console.log('porcodiobastardo')
     });
 
     $('#sidebarCollapse').on('click', function () {
@@ -286,11 +299,15 @@
 
   /* Carousel related actions - @Author: Alberto*/
   $('.item').mouseover(e => {
-    $(e.target).find('.media-content').toggleClass('hovered')
+    $(e.target).find('.media-content').addClass('hovered')
     })
 
-    $('.media-content').mouseout(e => {
-      $(e.target).toggleClass('hovered')
+    $('.item').mouseleave(e => {
+      $(e.target).find('.media-content').removeClass('hovered')
+      })
+
+    $('.media-content').mouseleave(e => {
+      $(e.target).removeClass('hovered')
     })
   </script>
 </body>
