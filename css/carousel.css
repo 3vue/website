@@ -88,3 +88,13 @@ div[class^='infinite-carousel']  {
   background: rgba(225, 225, 225, 0.5);
   color: BLACK;
 }
+
+.media-content .add-to {
+  float: none;
+  position: relative;
+  left: 20%;
+}
+
+.dropdown-toggle {
+  background-color: transparent !important; /*Removes the highlight when clicking on the dropdown*/
+}
