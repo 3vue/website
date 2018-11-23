@@ -1,0 +1,24 @@
+{
+  "name": "3vue",
+  "version": "1.0.0",
+  "description": "3VUE Website UI",
+  "homepage": "https://3vue.github.io/website/index.html",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3vue/website.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3vue/website/issues"
+  },
+  "homepage": "https://github.com/3vue/website#readme"
+}
