@@ -94,3 +94,7 @@ div[class^='infinite-carousel']  {
   position: relative;
   left: 20%;
 }
+
+.dropdown-toggle {
+  background-color: transparent !important; /*Removes the highlight when clicking on the dropdown*/
+}
