@@ -330,6 +330,9 @@
 
     $('.item').mouseleave(e => {
       $(e.target).find('.media-content').removeClass('hovered')
+      if ($(e.target).find('ul').hasClass('show')) {
+        $(e.target).find('ul').dropdown('toggle')
+      }
     })
 
     $('.media-content').mouseleave(e => {
