@@ -330,11 +330,24 @@
 
     $('.item').mouseleave(e => {
       $(e.target).find('.media-content').removeClass('hovered')
+      if ($(e.target).find('ul').hasClass('show')) {
+        $(e.target).find('ul').dropdown('toggle')
+      }
     })
 
     $('.media-content').mouseleave(e => {
       $(e.target).removeClass('hovered')
     })
+
+    $('.add-to').click(e => {
+      $(e.target).toggleClass('add-to_selected')
+      if ($(e.target).hasClass('add-to_selected') || $(e.target).parent().next().children().hasClass('add-to_selected') || $(e.target).parent().prev().children().hasClass('add-to_selected')) { //Check if any ".add-to" has been selected
+        $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/success.svg')
+      } else {
+        $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/plus.svg')
+      }
+    })
+
     </script>
   </body>
 

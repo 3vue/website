@@ -93,6 +93,11 @@ div[class^='infinite-carousel']  {
   float: none;
   position: relative;
   left: 20%;
+  padding: 0 8%;
+}
+
+.add-to_selected {
+  background: #ff312e;
 }
 
 .dropdown-toggle {
