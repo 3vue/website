@@ -185,3 +185,24 @@ a.article:hover {
     top: 0;
     right: 0;
 }
+
+/* ---------------------------------------------------
+    MODAL STYLE
+----------------------------------------------------- */
+
+.registration-form .font-small {
+    font-size: 0.8rem;
+  }
+
+
+.registration-form .modal-header {
+    border-bottom: none;
+  }
+
+.modal-dialog .registration-form .btn .fa {
+    color: #2196f3!important;
+  }
+
+.registration-form .modal-body, .registration-form .modal-footer {
+    font-weight: 400;
+  }
