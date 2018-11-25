@@ -113,23 +113,9 @@
               </form>
 
               <li class="nav-item">
-                <a class="btn mx-2 my-sm-1" href="#">
-                  <img src="./assets/icons/user.svg" width="30" height="30" alt="User settings">
-                </a>
-                <!-- <button class="btn btn-outline-primary my-2 my-sm-0" href="#">Sign Up</button>-->
+                <button class="btn btn-outline-primary my-2 mx-2 my-sm-0" data-toggle="modal" data-target="#modalRegisterForm" href="#">Sign In</button>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle mx-0 mt-sm-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="./assets/icons/settings.svg" width="30" height="30" alt="Settings">
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Change Account Settings</a>
-                  <a class="dropdown-item" href="#">Child Safe Mode</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="index_guest.html">Log Out</a>
-                </div>
-              </li>
             </ul>
           </div>
         </div>
@@ -282,73 +268,127 @@
       </div>
     </div>
 
-    <div class="overlay"></div>
+    <!-- Sign up Modal -->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <!--Content-->
+      <div class="modal-content registration-form">
+        <!--Header-->
+        <div class="modal-header text-center">
+          <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body mx-4">
+          <!--Body-->
+          <div class="md-form mb-5">
+            <input type="email" id="Form-email1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+          </div>
+
+          <div class="md-form pb-3">
+            <input type="password" id="Form-pass1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+            <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+              Password?</a></p>
+            </div>
+
+            <div class="text-center mb-3">
+              <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a" onclick="location.href='index.html';">Sign in</button>
+            </div>
+            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+              with:</p>
+
+              <div class="row my-3 d-flex justify-content-center">
+                <!--Facebook-->
+                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><img src="./assets/icons/facebook.svg" alt="Facebook" width="30px" height="30px"/></button>
+                <!--Twitter-->
+                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><img src="./assets/icons/twitter.svg" alt="Twitter" width="30px" height="30px"/></button>
+                <!--Google +-->
+                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><img src="./assets/icons/google.svg" alt="Google pl" width="30px" height="30px"/></button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-3 mb-1">
+              <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">
+                Sign Up</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <!-- Carousel Script -->
-    <script src='./scripts/carousel.js'></script>
+        <div class="overlay"></div>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <!-- Carousel Script -->
+        <script src='./scripts/carousel.js'></script>
 
 
-    <script type="text/javascript">
-    $('.infinite-carousel').infiniteCarousel({
-      itemsPerMove : 1,
-      duration : 250
-    });
+        <script type="text/javascript">
+        $('.infinite-carousel').infiniteCarousel({
+          itemsPerMove : 1,
+          duration : 250
+        });
 
-    $('.infinite-carousel-2').infiniteCarousel({
-      itemsPerMove : 1,
-      duration : 250
-    });
+        $('.infinite-carousel-2').infiniteCarousel({
+          itemsPerMove : 1,
+          duration : 250
+        });
 
-    $(document).ready(function () {
-      $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-      });
+        $(document).ready(function () {
+          $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+          });
 
-      $('#dismiss, .overlay').on('click', function () {
-        $('#sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
-      });
+          $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+          });
 
-      $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').addClass('active');
-        $('.overlay').addClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-    });
+          $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+          });
+        });
 
 
-    /* Carousel related actions - @Author: Alberto*/
-    $('.item').mouseover(e => {
-      $(e.target).find('.media-content').addClass('hovered')
-    })
+        /* Carousel related actions - @Author: Alberto*/
+        $('.item').mouseover(e => {
+          $(e.target).find('.media-content').addClass('hovered')
+        })
 
-    $('.item').mouseleave(e => {
-      $(e.target).find('.media-content').removeClass('hovered')
-      if ($(e.target).find('ul').hasClass('show')) {
-        $(e.target).find('ul').dropdown('toggle')
-      }
-    })
+        $('.item').mouseleave(e => {
+          $(e.target).find('.media-content').removeClass('hovered')
+          if ($(e.target).find('ul').hasClass('show')) {
+            $(e.target).find('ul').dropdown('toggle')
+          }
+        })
 
-    $('.media-content').mouseleave(e => {
-      $(e.target).removeClass('hovered')
-    })
+        $('.media-content').mouseleave(e => {
+          $(e.target).removeClass('hovered')
+        })
 
-    $('.add-to').click(e => {
-      $(e.target).toggleClass('add-to_selected')
-      if ($(e.target).hasClass('add-to_selected') || $(e.target).parent().next().children().hasClass('add-to_selected') || $(e.target).parent().prev().children().hasClass('add-to_selected')) { //Check if any ".add-to" has been selected
-        $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/success.svg')
-      } else {
-        $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/plus.svg')
-      }
-    })
+        $('.add-to').click(e => {
+          $(e.target).toggleClass('add-to_selected')
+          if ($(e.target).hasClass('add-to_selected') || $(e.target).parent().next().children().hasClass('add-to_selected') || $(e.target).parent().prev().children().hasClass('add-to_selected')) { //Check if any ".add-to" has been selected
+          $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/success.svg')
+        } else {
+          $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/plus.svg')
+        }
+      })
 
-    </script>
-  </body>
+      </script>
+    </body>
 
-</html>
+    </html>
