@@ -172,6 +172,12 @@ a.article:hover {
     color: #fff !important;
 }
 
+.search-results {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */

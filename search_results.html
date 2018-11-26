@@ -98,11 +98,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
 
-              <form class="form-inline my-2 my-lg-0" action="search_results.html">
+              <div class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-
+              </div>
               <li class="nav-item">
                 <a class="btn mx-2 my-sm-1" href="#">
                   <img src="./assets/icons/user.svg" width="30" height="30" alt="User settings">
@@ -125,6 +124,7 @@
         </div>
       </nav>
 
+      <h3 class="search-results">Search results for </h3>
       <!--  CAROUSEL -->
       <div class='infinite-carousel'>
         <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
@@ -212,7 +212,7 @@
       </div>
 
       <!--  CAROUSEL -->
-      <div class='infinite-carousel-2'>
+      <div class='infinite-carousel'>
         <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
           <img src="./assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
         </a>
@@ -364,6 +364,10 @@
       }
     })
 
+    $('button[type="submit"]').click(e => {
+      let text = $('input.form-control').val();
+      $('.search-results').html(`Search results for "${text}"`)
+    })
     </script>
   </body>
 
