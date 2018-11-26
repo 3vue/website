@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="X-UA-Compatible" content="ie=edge">
+
+  <title>3VUE - Free Streaming Website</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/carousel.css">
+  <link rel="stylesheet" href="./css/master.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="scripts/carousel.js"></script>
+
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+
+      <div class="sidebar-header">
+        <h3>Hello, Guest</h3>
+      </div>
+
+      <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+
+      <ul class="list-unstyled components">
+        <p>Trending</p>
+        <p>New</p>
+        <p>History</p>
+
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Categories</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Horror</a>
+            </li>
+            <li>
+              <a href="#">Action</a>
+            </li>
+            <li>
+              <a href="#">Comedy</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Discover</a>
+        </li>
+
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a href="#" class="download">Test button</a>
+        </li>
+        <li>
+          <a href="#" class="article">Back</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/icons/logo.svg" width="100" height="30" alt="Website's logo">
+          </a>
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span></span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+
+              <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </div>
+              <li class="nav-item">
+                <a class="btn mx-2 my-sm-1" href="#">
+                  <img src="./assets/icons/user.svg" width="30" height="30" alt="User settings">
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mx-0 mt-sm-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="./assets/icons/settings.svg" width="30" height="30" alt="Settings">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Change Account Settings</a>
+                  <a class="dropdown-item" href="#">Child Safe Mode</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="index_guest.html">Log Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h3 class="search-results">Search results for </h3>
+      <!--  CAROUSEL -->
+      <div class='infinite-carousel'>
+        <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
+          <img src="./assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
+        </a>
+        <div class="viewport">
+          <div class='list'>
+            <div class='item movie_1'>
+              <span class="media-content dropup">Sherlock Homeless
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_2'>
+              <span class="media-content dropup">Not Fast, just Furious
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_3'>
+              <span class="media-content dropup">Trainsleeping
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_4'>
+              <span class="media-content dropup">Spiderman 6
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_5'>
+              <span class="media-content dropup">I am Dog
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_6'>
+              <span class="media-content dropup">Ice Cream
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+        <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
+          <img src="./assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
+        </a>
+      </div>
+
+      <!--  CAROUSEL -->
+      <div class='infinite-carousel'>
+        <a class="btn mx-2 my-sm-1 pre carousel-go_left" href="#">
+          <img src="./assets/icons/left-chevron.svg" width="30" height="30" alt="Go left">
+        </a>
+        <div class="viewport">
+          <div class='list'>
+            <div class='item movie_1'>
+              <span class="media-content dropup">Sherlock Homeless
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_2'>
+              <span class="media-content dropup">Not Fast, just Furious
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_3'>
+              <span class="media-content dropup">Trainsleeping
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_4'>
+              <span class="media-content dropup">Spiderman 6
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_5'>
+              <span class="media-content dropup">I am Dog
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+            <div class='item movie_6'>
+              <span class="media-content dropup">Ice Cream
+                <a class="dropdown-toggle add-to-list" data-toggle="dropdown" href="#">
+                  <img src="./assets/icons/plus.svg" width="30" height="30" alt="Add to list">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <h6 class="dropdown-header">Add to:</h6>
+                  <li><a class="add-to" href="#">Favourites</a></li>
+                  <li><a class="add-to"href="#">"Watch later"</a></li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+        <a class="btn mx-2 my-sm-1 next carousel-go_right" href="#">
+          <img src="./assets/icons/right-chevron.svg" width="30" height="30" alt="Go right">
+        </a>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Carousel Script -->
+    <script src='./scripts/carousel.js'></script>
+
+
+    <script type="text/javascript">
+    $('.infinite-carousel').infiniteCarousel({
+      itemsPerMove : 1,
+      duration : 250
+    });
+
+    $('.infinite-carousel-2').infiniteCarousel({
+      itemsPerMove : 1,
+      duration : 250
+    });
+
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+
+
+    /* Carousel related actions - @Author: Alberto*/
+    $('.item').mouseover(e => {
+      $(e.target).find('.media-content').addClass('hovered')
+    })
+
+    $('.item').mouseleave(e => {
+      $(e.target).find('.media-content').removeClass('hovered')
+      if ($(e.target).find('ul').hasClass('show')) {
+        $(e.target).find('ul').dropdown('toggle')
+      }
+    })
+
+    $('.media-content').mouseleave(e => {
+      $(e.target).removeClass('hovered')
+    })
+
+    $('.add-to').click(e => {
+      $(e.target).toggleClass('add-to_selected')
+      if ($(e.target).hasClass('add-to_selected') || $(e.target).parent().next().children().hasClass('add-to_selected') || $(e.target).parent().prev().children().hasClass('add-to_selected')) { //Check if any ".add-to" has been selected
+        $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/success.svg')
+      } else {
+        $(e.target).closest('.dropup').find('img').attr('src', './assets/icons/plus.svg')
+      }
+    })
+
+    $('button[type="submit"]').click(e => {
+      let text = $('input.form-control').val();
+      $('.search-results').html(`Search results for "${text}"`) 
+    })
+    </script>
+  </body>
+
+</html>
