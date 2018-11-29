@@ -28,34 +28,68 @@ div[class^='infinite-carousel']  {
   /*display: inline-block;*/
 }
 
+div[class^="kids_"], div[class*="movie_"] {
+  background-size: 100% 100%;
+}
+
 .movie_1 {
   background-image: url('https://farm1.staticflickr.com/167/377069943_9c5acf3189_z.jpg?zz&#x3D;1'); /*CREATIVE COMMONS PICTURE*/
-  background-size: 100% 100%;
 }
 
 .movie_2 {
   background-image: url('https://farm1.staticflickr.com/143/377278868_1e5c3b1d2d_z.jpg?zz&#x3D;1'); /*CREATIVE COMMONS PICTURE*/
-  background-size: 100% 100%;
 }
 
 .movie_3 {
   background-image: url('https://farm1.staticflickr.com/161/375370884_2a1b606572_z.jpg?zz&#x3D;1'); /*CREATIVE COMMONS PICTURE*/
-  background-size: 100% 100%;
 }
 
 .movie_4 {
   background-image: url('https://farm1.staticflickr.com/196/527142856_bb019299a3_z.jpg?zz&#x3D;1'); /*CREATIVE COMMONS PICTURE*/
-  background-size: 100% 100%;
 }
 
 .movie_5 {
   background-image: url('https://farm1.staticflickr.com/896/26287198707_71496834e4_z.jpg'); /*CREATIVE COMMONS PICTURE*/
-  background-size: 100% 100%;
 }
 
 .movie_6 {
   background-image: url('https://farm1.staticflickr.com/129/418119336_d25b65792e_z.jpg'); /*CREATIVE COMMONS PICTURE*/
-  background-size: 100% 100%;
+}
+
+.children-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 50px;
+}
+
+.children-container > div {
+  border-radius: 50%;
+}
+
+.kids_1 {
+  background-image: url('https://farm5.staticflickr.com/4075/5410720755_b500448b2a.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.kids_2 {
+  background-image: url('https://farm8.staticflickr.com/7192/6962592575_567aa2d959.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.kids_3 {
+  background-image: url('https://farm8.staticflickr.com/7191/6816476566_9312f29f28.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.kids_4 {
+  background-image: url('https://farm8.staticflickr.com/7175/6387951013_97df143678.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.kids_5 {
+  background-image: url('https://farm2.staticflickr.com/1213/1286358948_8ca705432c.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.kids_6 {
+  background-image: url('https://farm9.staticflickr.com/8118/8937055505_e3db4b05c8.jpg'); /*CREATIVE COMMONS PICTURE*/
 }
 
 .carousel-go_left {

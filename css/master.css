@@ -22,7 +22,7 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: #fffffa;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -53,8 +53,8 @@ a:focus {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
-    color: #fff;
+    background: #000103;
+    color: #fffffa;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -69,7 +69,7 @@ a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
+    background:  #ff312e;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -80,8 +80,8 @@ a:focus {
 }
 
 #dismiss:hover {
-    background: #fff;
-    color: #7386D5;
+    background: #fffffa;
+    color: #000103;
 }
 
 .overlay {
@@ -101,16 +101,16 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #000103;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #232526;
 }
 
 #sidebar ul p {
-    color: #fff;
+    color: #fffffa;
     padding: 10px;
 }
 
@@ -121,14 +121,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    color: #000103;
+    background: #fffffa;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+    color: #fffffa;
+    background: #232526;
 }
 
 a[data-toggle="collapse"] {
@@ -146,7 +146,7 @@ ul.list-unstyled.components li .dropdown-toggle::after {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #232526;
 }
 
 ul.CTAs {
@@ -162,14 +162,14 @@ ul.CTAs a {
 }
 
 a.download {
-    background: #fff;
-    color: #7386D5;
+    background: #fffffa;
+    color: #000103;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
+    background: #232526 !important;
+    color: #fffffa !important;
 }
 
 .search-results {
@@ -192,6 +192,26 @@ a.article:hover {
     right: 0;
 }
 
+.btn-outline-success {
+  color: #ff312e;
+  border-color: #ff312e;
+}
+
+.btn-outline-success:hover {
+  background-color: #ff312e;
+  border-color: #ff312e;
+}
+
+.btn-info {
+  background-color: #ff312e;
+  border-color: #ff312e;
+}
+
+.btn-info:hover {
+  background-color: #e60400;
+  border-color: #e60400;
+}
+
 /* ---------------------------------------------------
     MODAL STYLE
 ----------------------------------------------------- */
@@ -211,4 +231,13 @@ a.article:hover {
 
 .registration-form .modal-body, .registration-form .modal-footer {
     font-weight: 400;
+  }
+
+  /* ---------------------------------------------------
+      USER PROFILE
+  ----------------------------------------------------- */
+
+  .user-info {
+    max-width: 960px;
+    margin: 0 auto;
   }
