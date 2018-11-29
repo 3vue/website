@@ -232,3 +232,12 @@ a.article:hover {
 .registration-form .modal-body, .registration-form .modal-footer {
     font-weight: 400;
   }
+
+  /* ---------------------------------------------------
+      USER PROFILE
+  ----------------------------------------------------- */
+
+  .user-info {
+    max-width: 960px;
+    margin: 0 auto;
+  }
