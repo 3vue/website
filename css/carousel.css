@@ -56,6 +56,30 @@ div[class^="kids_"], div[class*="movie_"] {
   background-image: url('https://farm1.staticflickr.com/129/418119336_d25b65792e_z.jpg'); /*CREATIVE COMMONS PICTURE*/
 }
 
+.movie_7 {
+  background-image: url('https://farm4.staticflickr.com/3428/3883475162_9bf601fbfd.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.movie_8 {
+  background-image: url('https://farm2.staticflickr.com/1767/42546751314_1352543258.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.movie_9 {
+  background-image: url('https://farm4.staticflickr.com/3272/2846507993_0242e8ed3f.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.movie_10 {
+  background-image: url('https://farm5.staticflickr.com/4017/4545780337_3dcb4122a4.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.movie_11 {
+  background-image: url('https://farm4.staticflickr.com/3645/3325473401_2903133f49.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
+.movie_12 {
+  background-image: url('https://farm3.staticflickr.com/2204/1988941154_b0f960f4c9.jpg'); /*CREATIVE COMMONS PICTURE*/
+}
+
 .children-container {
   display: grid;
   justify-content: center;
