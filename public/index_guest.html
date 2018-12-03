@@ -315,13 +315,13 @@
         <div class="modal-body mx-4">
           <!--Body-->
           <div class="md-form mb-5">
-            <input type="email" id="Form-email1" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+            <input type="email" id="email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="email">Your email</label>
           </div>
 
           <div class="md-form pb-3">
-            <input type="password" id="Form-pass1" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+            <input type="password" id="pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="pass">Your password</label>
             <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
               Password?</a></p>
             </div>
@@ -364,6 +364,45 @@
 
 
         <script>
+
+        function validateEmail() {
+            let email = $('#email').val();
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function validatePassword() {
+          let pw = $('#pass').val();
+          return (pw.length >= 8) ? true : false;
+        }
+
+        $('#email').on('keyup', e => {
+          if($('#email').val() == "") {
+            $('label[for="email"]').html('Your email').css('color', 'black')
+          } else {
+            if (!validateEmail()) {
+              $('label[for="email"]').html('Please enter a valid e-mail').css('color','red')
+            } else {
+              $('label[for="email"]').html('Valid email').css('color', 'green')
+            }
+          }
+        })
+
+        $('#pass').on('keyup', e => {
+          if($('#pass').val() == "") {
+            $('label[for="pass"]').html('Your password').css('color', 'black')
+          } else {
+            if (!validatePassword()) {
+              $('label[for="pass"]').html('Password must be at least 8 characters').css('color','red')
+            } else {
+              $('label[for="pass"]').html('Valid password').css('color', 'green')
+            }
+          }
+        })
+
+
+
+
         $('.infinite-carousel').infiniteCarousel({
           itemsPerMove : 1,
           duration : 250
