@@ -198,10 +198,14 @@ a.article:hover {
 }
 
 .btn-outline-success:hover {
+  background-color: #ff312e !important;
+  border-color: #ff312e !important;
+}
+
+.btn-outline-success:active {
   background-color: #ff312e;
   border-color: #ff312e;
 }
-
 .btn-info {
   background-color: #ff312e;
   border-color: #ff312e;
