@@ -162,3 +162,8 @@ div[class^="kids_"], div[class*="movie_"] {
 .dropdown-toggle {
   background-color: transparent !important; /*Removes the highlight when clicking on the dropdown*/
 }
+
+.play {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
