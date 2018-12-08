@@ -1,3 +1,4 @@
+/*Removed modal box, i.e. background and border*/
 .modal-content {
     background-image: transparent;
     margin: auto;
@@ -10,7 +11,7 @@
     max-height: 356px;
     display: block;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0,0,0,1);
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 1);
 }
 
@@ -38,21 +39,19 @@
 }
 
 
+
 .w3-modal {
     padding-top: 0px;
 }
 
 
-.trailer {
+.trailer{
     width: 100%;
     height: 356px;
     min-width: 300px;
     max-width: 700px;
     max-height: 356px;
-
-
 }
-
 
 @media only screen and (max-width: 1440px) {
     .close {
